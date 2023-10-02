@@ -62,8 +62,8 @@ const int MAX_FRAME = 30;           // how fast the heart beat
 //float TRAN_VALUE = 0.025f;
 
 //texture picture
-const char PLAYER_SPRITE1[] = "/Users/arielwang/Desktop/SDLProject 2/assets/art/blue.png";
-const char PLAYER_SPRITE2[] =  "/Users/arielwang/Desktop/SDLProject 2/assets/art/flower.png";
+const char PLAYER_SPRITE1[] = "blue.png";
+const char PLAYER_SPRITE2[] =  "flower.png";
 
 //translate in a circle
 const float RADIUS = 2.0f; //radius of transformation circle
@@ -266,9 +266,10 @@ void update(){
     g_y_coords += 1.0f * delta_time;
     //---------------------------------------------------------------------------------------
     
-    //EXTRA Credit & PART 2: rectangle translate in a pattern(circle) and triangle translate diagonally
-    g_model_matrix2 = glm::translate(g_model_matrix2, glm::vec3(g_x_coords, g_y_coords, 0.0f));
+    //EXTRA Credit & PART 2: rectangle translate in relation to the triangle and triangle translate diagonally
+//    g_model_matrix2 = glm::translate(g_model_matrix1, glm::vec3(g_x_coords, g_y_coords, 0.0f));
     g_model_matrix1 = glm::translate(g_model_matrix1, glm::vec3(g_translate, g_translate, 0.0f));
+    g_model_matrix2 = glm::translate(g_model_matrix1, glm::vec3(0.0f, 0.0f, 0.0f));
 
     
 //    EXTRA Credit: change scale (rectangle)
