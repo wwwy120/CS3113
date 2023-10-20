@@ -44,14 +44,14 @@ const int VIEWPORT_X      = 0,
 const float MILLISECONDS_IN_SECOND = 1000.0;
 
 //texture picture
-const char BALL_TEXTURE[] = "/Users/arielwang/Desktop/HW2-Pong/assets/art/flower.png";
-const char PLAYER_TEXTURE[] = "/Users/arielwang/Desktop/HW2-Pong/assets/art/player.png";
-const char TEXT_TEXTURE1[] = "/Users/arielwang/Desktop/HW2-Pong/assets/art/player1win.png";
-const char TEXT_TEXTURE2[] = "/Users/arielwang/Desktop/HW2-Pong/assets/art/player2win.png";
-//const char BALL_TEXTURE[] = "art/flower.png";
-//const char PLAYER_TEXTURE[] = "player.png";
-//const char TEXT_TEXTURE1[] = "player1win.png";
-//const char TEXT_TEXTURE2[] = "player2win.png";
+//const char BALL_TEXTURE[] = "/Users/arielwang/Desktop/HW2-Pong/assets/art/flower.png";
+//const char PLAYER_TEXTURE[] = "/Users/arielwang/Desktop/HW2-Pong/assets/art/player.png";
+//const char TEXT_TEXTURE1[] = "/Users/arielwang/Desktop/HW2-Pong/assets/art/player1win.png";
+//const char TEXT_TEXTURE2[] = "/Users/arielwang/Desktop/HW2-Pong/assets/art/player2win.png";
+const char BALL_TEXTURE[] = "art/flower.png";
+const char PLAYER_TEXTURE[] = "player.png";
+const char TEXT_TEXTURE1[] = "player1win.png";
+const char TEXT_TEXTURE2[] = "player2win.png";
 
 //------------------------------Shader Path------------------------------
 const char V_SHADER_PATH[] = "shaders/vertex_textured.glsl",
