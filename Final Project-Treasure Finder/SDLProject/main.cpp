@@ -238,6 +238,16 @@ void update()
         g_game_stop = true;
         g_game_win = true;
     }
+    if(g_game_win == true && g_current_scene == g_level_a){
+        g_game_win = false;
+        g_game_stop = false;
+        switch_to_scene(g_level_b);
+    }
+    if(g_game_win == true && g_current_scene == g_level_b){
+        g_game_win = false;
+        g_game_stop = false;
+        switch_to_scene(g_level_c);
+    }
     if(!g_game_stop){
         
         // ————— DELTA TIME / FIXED TIME STEP CALCULATION ————— //

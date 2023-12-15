@@ -32,6 +32,7 @@ struct GameState
     Entity *mud;
     Entity *bomb_count;
     Entity *star_count;
+    bool win = false;
     
     // ————— AUDIO ————— //
     Mix_Music *bgm;

@@ -4,7 +4,7 @@ class LevelC : public Scene {
 public:
     // ————— STATIC ATTRIBUTES ————— //
     int ENEMY_COUNT = 10;
-    int STAR_COUNT = 3;
+    int STAR_COUNT = 5;
     int BOMB_COUNT = 10;
     
     // ————— CONSTRUCTOR ————— //

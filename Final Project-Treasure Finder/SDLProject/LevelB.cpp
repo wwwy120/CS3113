@@ -171,7 +171,7 @@ void LevelB::initialise()
         m_state.enemies[i].set_ai_state(IDLE);
         m_state.enemies[i].m_texture_id = enemy_texture_id;
         m_state.enemies[i].set_movement(glm::vec3(0.0f));
-        m_state.enemies[i].set_speed(2.0f);
+        m_state.enemies[i].set_speed(1.0f);
         
         m_state.enemies[i].m_walking[ m_state.enemies[i].LEFT]  = new int[3] { 12, 13, 14 };
         m_state.enemies[i].m_walking[ m_state.enemies[i].RIGHT] = new int[3] { 24, 25, 26 };

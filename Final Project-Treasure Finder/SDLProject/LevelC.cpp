@@ -168,7 +168,7 @@ void LevelC::initialise()
         m_state.enemies[i].set_ai_state(IDLE);
         m_state.enemies[i].m_texture_id = enemy_texture_id;
         m_state.enemies[i].set_movement(glm::vec3(0.0f));
-        m_state.enemies[i].set_speed(2.5f);
+        m_state.enemies[i].set_speed(2.0f);
         
         m_state.enemies[i].m_walking[ m_state.enemies[i].LEFT]  = new int[3] { 66, 67, 68 };
         m_state.enemies[i].m_walking[ m_state.enemies[i].RIGHT] = new int[3] { 78, 79, 80 };
@@ -224,6 +224,8 @@ void LevelC::initialise()
     m_state.star[0].set_position(glm::vec3(rand() % 16, rand() % 16, 0.0f));
     m_state.star[1].set_position(glm::vec3(rand() % 16, -rand() % 16, 0.0f));
     m_state.star[2].set_position(glm::vec3(-rand() % 16, rand() % 16, 0.0f));
+    m_state.star[3].set_position(glm::vec3(-rand() % 16,-rand() % 16, 0.0f));
+    m_state.star[4].set_position(glm::vec3(-rand() % 16, rand() % 16, 0.0f));
     
     //Bomb
     m_state.bomb = new Entity();
